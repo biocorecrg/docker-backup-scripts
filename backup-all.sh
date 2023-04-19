@@ -3,7 +3,7 @@
 # by piscue
 
 # Setting variables
-backup_path="/home/core/backups"
+backup_path="/data/backups/docker"
 tar_opts="--exclude='/var/run/*'"
 
 # Set this to true to enable Docker upload
