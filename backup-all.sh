@@ -1,15 +1,16 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # by piscue
 
 # Setting variables
-backup_path="/data/backups/docker"
+
+DATE=`date +%Y%m%d-%H%M`
+
+backup_path="/data/backups/docker/$DATE"
 tar_opts="--exclude='/var/run/*'"
 
 # Set this to true to enable Docker upload
 docker_upload_enable=false
-
-cd "${BASH_SOURCE%/*}" || exit
 
 mkdir -p $backup_path
 
