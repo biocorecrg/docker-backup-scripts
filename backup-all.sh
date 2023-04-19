@@ -27,10 +27,10 @@ echo ""
 source backup-images.sh
 echo ""
 
-echo - backing up volumes
-echo ""
-source backup-volumes.sh
-echo ""
+# echo - backing up volumes
+# echo ""
+# source backup-volumes.sh
+# echo ""
 
 if $docker_upload_enable
 then
